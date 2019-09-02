@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Publicaciones DJango MESO</a></h1>
+        </div>
+
+        <div>
+            {% for pub in pubs %}
+            <p>Hora de publicación: {{pub.fecha_publicacion}}</p>
+            <h2><a href="">{{pub.titulo}}</a></h2>
+            <p align="justify">{{pub.texto}}</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>
