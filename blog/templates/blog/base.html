@@ -9,9 +9,10 @@
 
     </head>
     <body>
-
         <div class="page-header">
+            {% if user.is_authenticated %}
             <a href="{% url 'nuevo_pub' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
             <h1><a href="/">Publicaciones DJango</a></h1>
         </div>
 
